@@ -10,17 +10,19 @@
 /* Main */
 main {
   height: 100vh;
+  padding-top: 0.5em;
   background-color: green;
   background-image: url("./mariah betinho 1.png");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 }
-main h1 {
+main h1, main h2 {
   width: 80vw;
-  margin-top: 0.5em;
   font-weight: 400;
   font-family: "Itim", sans-serif;
   font-size: 6rem;
@@ -30,10 +32,10 @@ main h1 {
 }
 
 @media (min-width: 201px) and (max-width: 500px) {
-  header {
-    align-items: start;
+  main {
+    align-items: center;
   }
-  header h1 {
+  main h1, main h2 {
     font-size: 2rem;
     color: rgb(255, 0, 0);
     background-color: rgba(11, 138, 49, 0.2);
